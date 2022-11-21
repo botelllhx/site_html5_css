@@ -62,6 +62,13 @@ a:hover{
     text-decoration: underline;
     text-shadow: none;
 }
+
+header{
+    border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:100%; /*1200px a 1200px = 1 x 100 = 100%*/
+}
+
 /*para aparecer a logo */
 header h1 a{
     background:url(../imagens/logo-criar-site-responsivo.png) no-repeat;
@@ -87,35 +94,137 @@ nav {
     nav ul li a {
         margin-right: 2.5%;
     }
+    nav a:link, nav a:visited{
+        color: #999;
+        font-size: 1.2222222222em;
+        font-weight: 300;
+        letter-spacing: -0.0909090909em;
+        line-height: 1.18181818182em;
+        display: inline-block;
+    }
+    nav a.ativo, nav a:visited{
+        color: #0ac3fe;
+    }
 
 .chamada{
-
-}
+    height:290px;
+    text-align:center;
+    width:100%; /*1200px a 1200px = 1 x 100 = 100%*/
+    }
+    h2 span{
+        font-size: 1em; /* 60px a 60px = 1em */
+        font-weight: 300;
+        letter-spacing: -0.0333333333em; /* -2px a 60px = 0.0333333333em */
+        line-height: 1em; /* 60px a 60px = 1em */
+        }
+.chamada h3 {
+    margin: 0 auto;
+    width:75%; /* 900px a 1200px = 0.75 x 100 = 75%*/
+    }
 
 .meio{
+    background-color: #0ac3fe;
+    height: 437px;
+    padding: 2.5%;
+    width: 95%;
+}
 
+.desktop, .tablet, .mobile{
+    float: left;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    width: 31.57894736842105%;
+}
+
+.desktop, .tablet{
+    margin-right: 2.631578947368421%;
 }
 
 .desktop{
-
+    background-color: #fe9481;
 }
 
 .tablet{
-
+    background-color: #fcda92;
 }
 
 .mobile{
+    background-color: #9c8cb9;
+    margin-right: 0px;
+}
 
+.meio .desktop figure, .meio .tablet figure, .meio .mobile figure{
+    margin: 15px auto 0px auto;
+    width: 69.44444444444444%;
+}
+
+.meio h3{
+    color: #ffffff;
+    font-size: 1.77777777778em;
+    font-weight: 300;
+    letter-spacing: -0.0625em;
+    margin-bottom: 30px;
+    text-shadow: none;
+}
+
+.meio p{
+    background-color: #ffffff;
+    float: left;
+    height: 200px;
+    padding: 1.9444444444444445%;
+    position: absolute;
+    max-width: 100%;
+    text-align: justify;
+    top: 210px;
+}
+
+span.botao a{
+    color: #ffffff;
+    padding: 2px 3.333333333333333%;
+}
+
+.desktop span.botao a{
+    background-color: #fe9481;
+}
+
+.tablet span.botao a{
+    background-color: #fcda92;
+}
+
+.mobile span.botao a{
+    background-color: #9c8cb9;
+}
+
+span.btn{
+    font-size: 1.1111111111em;
+    font-weight: 400;
+    letter-spacing: -0.1em;
+    height: 27px;
+    margin-top: 30px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    width: 33.33333333333333%;
+    text-shadow: none;
+}
+
+.footer{
+    clear: both;
+    height: 50px;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .copyleft{
-
+    float: left;
+    margin-left: 2.5%;
 }
 
 .desenvolvedor{
-
+    float: right;
 }
 
-.botao{
-
+.desenvolvedor figure{
+    width: 100%;
 }
